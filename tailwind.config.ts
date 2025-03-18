@@ -6,6 +6,10 @@ const config: Config = {
         fontFamily: {
             tektur: ["Tektur", "sans-serif"], // Ajout de la police
           },
+          wordSpacing: {
+            wider: '0.5rem',
+            widest: '0.5rem',
+          },  
     },
   },
   plugins: [],

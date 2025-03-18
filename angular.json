@@ -77,10 +77,14 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "src/assets"  
+            "assets": [{
+              "glob": "**/*",
+              "input": "src/assets/",
+              "output": "/assets/"
+              },
+              {"glob": "favicon.ico",
+              "input": "src/",
+              "output": "/"
               }
             ],
             "styles": [
