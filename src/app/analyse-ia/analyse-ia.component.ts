@@ -1,6 +1,7 @@
 import { HttpClient ,HttpClientModule,HttpDownloadProgressEvent,HttpEventType } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MarkdownComponent } from 'ngx-markdown'; 
 
 
 @Component({
@@ -8,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   standalone:true,
   imports: [
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   templateUrl: './analyse-ia.component.html',
   styleUrl: './analyse-ia.component.css'

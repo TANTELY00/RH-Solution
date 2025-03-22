@@ -1,14 +1,14 @@
 <div class="flex space-x-40">
   <div class="w-[40%]">
-    <h1 class=" leading-[1.75] word-spacing-wider tracking-widest">Analyse Intelligente et Automatisée des CV pour un Recrutement Optimisé" 🚀</h1>
-    <p class="text-xs mt-3 mb-3 leading-[1.75] word-spacing-wider tracking-widest">Ajoutez un nouveau CV ou posez vos questions pour une sélection rapide et intelligente des candidats ! 🚀</p>
-    <select id="cv-select" class="mb-3 mt-1 block w-full rounded-lg border border-gray-300 bg-white py-2 px-3 text-gray-900 shadow-sm focus:border-[#dddfdf] focus:outline-none focus:ring-2 focus:ring-[#dddfdf] opacity-75">
-      <option class="text-xs" value="" disabled selected>Choisissez un offre</option>
-      <option class="text-xs" value="cv1">A</option>
-      <option class="text-xs" value="cv2">B</option>
-      <option class="text-xs" value="cv3">C</option>
+    <h1 class="text-sm leading-[1.75] word-spacing-wider tracking-widest">Intelligent and Automated Resume Analysis for Optimized Recruitment 🚀</h1>
+    <p class="text-xs mt-3 mb-3 leading-[1.75] word-spacing-wider tracking-widest">Upload a new resume or ask your questions for a fast and intelligent candidate selection! 🚀</p>
+    <select id="cv-select" class="mb-3 mt-1 block w-full rounded-lg border border-gray-300 bg-white py-2 px-3 text-gray-900 shadow-sm focus:border-[#dddfdf] focus:outline-none focus:ring-2 focus:ring-[#dddfdf] opacity-50">
+      <option class="text-xs" value="" disabled selected>Choose an offer</option>
+      <option class="text-xs" value="cv1">AI Engineer</option>
+      <option class="text-xs" value="cv2">Full stack-Java-Angular </option>
+      <option class="text-xs" value="cv3">Web Developer</option>
     </select>
-    <textarea [(ngModel)]="question" id="message" rows="4" placeholder="Écrivez votre texte ici..." 
+    <textarea [(ngModel)]="question" id="message" rows="4" placeholder="Write your text here..." 
       class=" mb-3 text-xs mt-1 h-[200px] opacity-75 block w-full rounded-lg border border-gray-300 bg-white p-3 text-gray-900 shadow-sm focus:border-[#dddfdf]  focus:outline-none focus:ring-2 focus:ring-[#dddfdf] " name="question" >
     </textarea>
     <div class="flex justify-between">
@@ -26,8 +26,8 @@
   </div>
 
   <div class="w-[60%]">
-    <p class="text-sm  mb-3 leading-[1.75] word-spacing-wider tracking-widest"> Les Meilleurs Talents  🚀</p>
-    <div class="w-[670px] h-[387px] p-5 overflow-y-auto text-xs bg-white rounded-lg shadow-md opacity-75">
+    <p class="text-sm  mb-3 leading-[1.75] word-spacing-wider tracking-widest"> The Best Talents  🚀</p>
+    <div class="w-[670px] h-[365px] p-5 overflow-y-auto text-xs bg-white rounded-lg shadow-md opacity-50">
             <p class="leading-[2] text-justify">{{reponse}}</p>
     </div>
   </div>
