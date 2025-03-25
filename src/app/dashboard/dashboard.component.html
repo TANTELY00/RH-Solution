@@ -8,21 +8,26 @@
     </div>
     <div class="w-[75%] flex justify-end space-x-4">
         <div>
-            <a href="#" class="bg-[#dddfdf] space-x-2 rounded-full p-1 w-28  h-8 flex items-center justify-center ">
-                <span class="text-xs">Monthly</span>
-                <i  class="fa-solid text-xs fa-chevron-down"></i>
+            <a href="#" class=" space-x-2 rounded-full p-1 w-5 bg-sky-700 hover:bg-sky-600 text-white  h-5 flex items-center justify-center ">
+                <i class="  text-[10px] fa-solid fa-plus"></i>
             </a>
         </div>
         <div>
-            <a href="#" class="bg-[#dddfdf] space-x-2 rounded-full p-1 w-28  h-8 flex items-center justify-center ">
-                <i class="fa-solid fa-download"></i>
-                <span class="text-xs">Export</span>
+            <a href="#" class="bg-[#dddfdf] space-x-2 rounded-full p-1 w-23  h-5 flex items-center justify-center ">
+                <span class="text-[10px]">Monthly</span>
+                <i  class=" text-[10px] fa-solid text-xs fa-chevron-down"></i>
             </a>
         </div>
         <div>
-            <a href="#" class="bg-[#dddfdf] space-x-2 rounded-full p-1 w-28  h-8 flex items-center justify-center ">
-                <i class="fa-solid fa-filter"></i>
-                <span class="text-xs">Filter</span>
+            <a href="#" class="bg-[#dddfdf] space-x-2 rounded-full p-1 w-23  h-5 flex items-center justify-center ">
+                <i class=" text-[10px] fa-solid fa-download"></i>
+                <span class="text-[10px]">Export</span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="bg-[#dddfdf] space-x-2 rounded-full p-1 w-23  h-5 flex items-center justify-center ">
+                <i class="fa-solid fa-filter text-[10px]"></i>
+                <span class="text-[10px]">Filter</span>
             </a>
         </div>
     </div>
@@ -33,34 +38,30 @@
 
     <div class="w-[80%] mt-2 ">
         <div class="flex space-x-10 relative " >
-            <div class="flex items-center">
-                <a href="#">
-                    <i class="fa-solid fa-circle-arrow-left opacity-35"></i>
-                </a>
+            <div class="flex items-center" [ngClass]="changement === 'atteint-pre' ? ' opacity-35' : ''">
+                <i (click)="previous()" class="fa-solid fa-circle-arrow-left cursor-pointer"></i>
             </div>
-            <div>
-                <img  class="w-[265px] opacity-75" src="../images/2.png" alt="forme 2">
+            <div >
+                <img  class="w-[265px] opacity-75" src="../images/{{v1.image}}" alt="forme 2">
                 <a href="#" class="bg-white opacity-75 p-2 rounded-full absolute left-[285px] top-[-2%] h-9 w-9 flex align-middle justify-center " >
                     <i class="fa-solid fa-arrow-up-right-from-square pt-0.5 "></i>
                 </a>
             </div>
             <div>
-                <img  class="w-[265px] opacity-75" src="../images/5.png" alt="forme 1">
+                <img  class=" w-[265px] opacity-75" src="../images/{{v2.image}}" alt="forme 1">
                 <a href="#" class="bg-white opacity-75 p-2 rounded-full absolute left-[590px] top-[-2%] h-9 w-9 flex align-middle justify-center " >
                     <i class="fa-solid fa-arrow-up-right-from-square pt-0.5"></i>
                 </a>
             </div>
             <div>
-                <img  class="w-[265px] opacity-75" src="../images/6.png" alt="forme 1-1">
+                <img  class=" w-[265px] opacity-75" src="../images/{{v3.image}}" alt="forme 1-1">
                 <a href="#" class="bg-white opacity-75 p-2 rounded-full absolute left-[895px] top-[-2%] h-9 w-9 flex align-middle justify-center " >
                     <i class="fa-solid fa-arrow-up-right-from-square pt-0.5"></i>
                 </a>
             </div>
             
-            <div class="flex items-center">
-                <a href="#">
-                    <i class="fa-solid fa-circle-arrow-right"></i>
-                </a>
+            <div class="flex items-center" [ngClass]="changement === 'atteint' ? ' opacity-35' : ''">
+                <i (click)="next()" class="fa-solid fa-circle-arrow-right cursor-pointer"></i>
             </div>
         </div>
         
