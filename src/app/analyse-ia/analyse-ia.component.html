@@ -11,16 +11,16 @@
     <textarea [(ngModel)]="question" id="message" rows="4" placeholder="Write your text here..." 
       class=" mb-3 text-xs mt-1 h-[200px] opacity-75 block w-full rounded-lg border border-gray-300 bg-white p-3 text-gray-900 shadow-sm focus:border-[#dddfdf]  focus:outline-none focus:ring-2 focus:ring-[#dddfdf] " name="question" >
     </textarea>
-    <div class="flex justify-between">
-      <div>
-        <a href="#" class="space-x-2">
-          <i class="fa-solid fa-cloud-arrow-down"></i>
-          <span class="text-xs">Add New CV</span>
-        </a>
+    <div class="flex justify-between pr-1 pl-1">
+      <div class="space-x-3 ">
+        <i class=" cursor-pointer fa-solid fa-cloud-arrow-down"></i>
+        <i class=" cursor-pointer fa-solid fa-microphone"></i>
       </div>
-      <div class="space-x-2">
-        <i class="fa-solid fa-paper-plane"></i>
-        <button class="text-xs pointer-event cursor-pointer" (click)="askAgent()">Send</button>
+      <div class="space-x-2 mt-[-4px]">
+        <button class="text-xs pointer-event cursor-pointer " (click)="askAgent()">
+          <i class="fa-solid fa-paper-plane mr-2"></i>
+          Send
+        </button>
       </div>
     </div>
   </div>
